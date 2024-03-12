@@ -14,6 +14,25 @@ html {
 
 body {
   font-family: var(--std-font-family);
+  font-size: 14px;
+  background-color: var(--clr-gray);
+}
+
+.app-container {
+  display: flex;
+  column-gap: var(--offset-xl);
+  width: var(--app-container);
+  max-width: 100%;
+  min-height: 100dvh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--clr-light);
+}
+
+.app-body {
+  padding-top: var(--offset-top);
+  width: 100%;
+  height: 1000px;
 }
 
 .list-reset {
@@ -22,9 +41,22 @@ body {
   list-style: none;
 }
 
+.link-reset {
+  text-decoration: none;
+  color: inherit;
+}
+
 .btn-reset {
   padding: 0;
   border: 0;
   outline: none;
   background-color: transparent;
+}
+
+button:not(disabled) {
+  cursor: pointer;
+}
+
+a:not([href]) {
+  cursor: auto;
 }

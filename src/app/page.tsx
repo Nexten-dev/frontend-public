@@ -1,7 +1,6 @@
-export default function Home() {
+import Welcome from "@/widgets/welcome";
+export default function StartPage() {
   return (
-    <>
-      Основной контент
-    </>
+    <Welcome/>
   );
 }

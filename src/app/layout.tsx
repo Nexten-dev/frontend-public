@@ -1,5 +1,5 @@
 import "./styles/index.scss";
-import Aside from "@/widgets/aside";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -8,12 +8,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body>
-        <div className="app-container">
-          <Aside/>
-          <main className="app-body">
-          {children}
-          </main>
-        </div>
+        {children}
       </body>
     </html>
   );

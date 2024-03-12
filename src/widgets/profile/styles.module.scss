@@ -1,0 +1,21 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.panel {
+  padding: 60px 30px;
+  border: 1px solid hotpink;
+}
+
+.stories {
+  padding: 30px;
+  border: 1px solid khaki;
+}
+
+.posts {
+  padding: 80px 30px;
+  border: 1px solid gold;
+}
+

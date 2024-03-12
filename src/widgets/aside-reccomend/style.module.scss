@@ -1,0 +1,20 @@
+$width-lg: 320px;
+
+
+.aside {
+  position: sticky;
+  top: 0;
+  flex: none;
+  width: $width-lg;
+  height: 100dvh;
+  padding: var(--offset-top) 25px 32px;
+  overflow: auto;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    row-gap: 35px;
+    border: 1px solid #eee;
+  }
+}

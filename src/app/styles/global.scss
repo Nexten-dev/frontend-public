@@ -1,38 +1,34 @@
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
-  font-family: var(--std-font-family);
   font-size: 14px;
+  font-family: var(--std-font-family);
   background-color: var(--clr-gray);
 }
 
 .app-container {
   display: flex;
-  column-gap: var(--offset-xl);
   width: var(--app-container);
   max-width: 100%;
   min-height: 100dvh;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+  column-gap: var(--offset-xl);
   background-color: var(--clr-light);
 }
 
 .app-body {
-  padding-top: var(--offset-top);
   width: 100%;
   height: 1000px;
+  padding-top: var(--offset-top);
 }
 
 .list-reset {
@@ -42,18 +38,18 @@ body {
 }
 
 .link-reset {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .btn-reset {
   padding: 0;
+  background-color: transparent;
   border: 0;
   outline: none;
-  background-color: transparent;
 }
 
-button:not(disabled) {
+button:not(:disabled) {
   cursor: pointer;
 }
 

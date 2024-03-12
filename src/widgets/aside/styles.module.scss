@@ -1,4 +1,5 @@
 $width-lg: 244px;
+
 .aside {
   position: sticky;
   top: 0;
@@ -24,15 +25,15 @@ $width-lg: 244px;
 
 .item {
   display: flex;
-  column-gap: 20px;
   padding: 12px 14px;
   font-size: 15px;
   line-height: 24px;
+  column-gap: 20px;
   transition: opacity 0.3s ease-in-out;
 
   &--active {
-    font-size: 16px;
     font-weight: 700;
+    font-size: 16px;
 
     & > svg {
       fill: var(--clr-dark);
@@ -40,7 +41,7 @@ $width-lg: 244px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   .item:hover {
     opacity: 0.8;
   }

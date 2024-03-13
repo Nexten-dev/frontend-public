@@ -1,10 +1,16 @@
+import Story from './Story';
 import styles from '../styles.module.scss';
 
 const Stories = () => {
   return (
-    <div className={styles.stories}>
-      Тут список сохранённых своих stories. Тёплые воспоминания, холодный душ
-    </div>
+    <ul className={styles.stories}>
+      <li>
+        <Story />
+      </li>
+      <li>
+        <Story />
+      </li>
+    </ul>
   );
 };
 

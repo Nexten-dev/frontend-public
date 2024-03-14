@@ -5,7 +5,7 @@
 }
 
 .panel {
-  padding: 60px 30px;
+  padding: 92px 30px;
   border: 1px solid hotpink;
 }
 
@@ -15,6 +15,11 @@
   padding: 0;
   display: flex;
   flex-direction: row;
+  padding: 0 45px;
+
+  .stories__item:not(:last-child) {
+    margin-right: 48px;
+  }
 }
 
 .story {
@@ -23,13 +28,14 @@
   align-items: center;
 
   .story__preview {
+    margin-bottom: 10px;
     border: none;
     background: none;
     padding: 0;
-    width: 90px;
-    height: 90px;
-    border: 2px solid #c1b3b3;
-    border-radius: 100%;
+    width: 84px;
+    height: 84px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
     overflow: hidden;
   }
 

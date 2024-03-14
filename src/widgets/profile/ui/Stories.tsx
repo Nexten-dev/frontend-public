@@ -4,11 +4,11 @@ import styles from '../styles.module.scss';
 const Stories = () => {
   return (
     <ul className={styles.stories}>
-      <li>
-        <Story />
+      <li className={styles.stories__item}>
+        <Story description='BTS' />
       </li>
       <li>
-        <Story />
+        <Story description='Frisbee' />
       </li>
     </ul>
   );

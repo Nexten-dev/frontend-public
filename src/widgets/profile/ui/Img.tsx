@@ -1,8 +1,14 @@
 import Image from 'next/image';
-import preview from '../img/story-1.jpg';
 
-const Img = () => {
-  return <Image src={preview.src} alt='preview' width={75} height={75} />;
+type Props = {
+  source: string;
+  alternative?: string;
+  w?: number;
+  h?: number;
+};
+
+const Img = ({ source, alternative, w, h }: Props) => {
+  return <Image src={source} alt={alternative} width={w} height={h} />;
 };
 
 export default Img;

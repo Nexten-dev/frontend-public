@@ -9,9 +9,34 @@ html {
 }
 
 body {
+  margin: 0;
   font-size: 14px;
   font-family: var(--std-font-family);
   background-color: var(--clr-gray);
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  background-color: transparent;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+a:not([href]) {
+  cursor: auto;
+}
+
+img {
+  border-style: none;
 }
 
 .app-container {
@@ -50,12 +75,4 @@ body {
   background-color: transparent;
   border: 0;
   outline: none;
-}
-
-button:not(:disabled) {
-  cursor: pointer;
-}
-
-a:not([href]) {
-  cursor: auto;
 }

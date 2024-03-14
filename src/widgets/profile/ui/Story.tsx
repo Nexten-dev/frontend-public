@@ -1,15 +1,23 @@
 import styles from '../styles.module.scss';
-import Img from './Img';
+import Image from 'next/image';
+import type { PropsStory } from '../model/types';
 
-type Props = {
-  description: string;
-};
-
-function Story({ description }: Props) {
+function Story({
+  imageSource,
+  altText,
+  imageW,
+  imageH,
+  description,
+}: PropsStory) {
   return (
     <div className={styles.story}>
       <button type='button' className={styles.story__preview}>
-        <Img></Img>
+        <Image
+          src={imageSource}
+          alt={altText}
+          width={imageW}
+          height={imageH}
+        ></Image>
       </button>
       <span className={styles.story__description}>{description}</span>
     </div>

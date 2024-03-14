@@ -30,7 +30,6 @@ const Nav = () => {
         {
           navList.map(item=> {
             const isActive = pathName?.startsWith(item.link);
-            console.log(isActive);
             return (
               <li key={item.name}>
                 <Link href={item.link} className={`link-reset ${styles['item']} ${isActive ? styles['item--active'] : ''}`}>{item.icon}{item.name}</Link>

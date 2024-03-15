@@ -1,6 +1,5 @@
 import Story from './Story';
 import styles from '../styles.module.scss';
-// import type { PropsStories } from '../model/types';
 import imgStory1 from '../img/story1.png';
 import imgStory2 from '../img/story2.png';
 
@@ -15,13 +14,16 @@ const stories = [
     imageSource: imgStory2,
     description: 'Frisbee',
   },
+  {
+    id: 1,
+    imageSource: imgStory1,
+    description: 'Metallica',
+  },
 ];
-
-console.log(stories[0].imageSource);
 
 const Stories = () => {
   return (
-    <ul className={styles.stories}>
+    <ul className={`list-reset ${styles.stories}`}>
       {stories.map((item) => (
         <li className={styles.stories__item} key={item.id}>
           <Story

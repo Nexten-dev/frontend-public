@@ -7,7 +7,7 @@ function Story({ imageSource, description }: PropsStory) {
       <button
         type='button'
         className={styles.story__preview}
-        style={{ backgroundImage: imageSource.src }}
+        style={{ backgroundImage: `url(${imageSource.src})` }}
       ></button>
       <span className={styles.story__description}>{description}</span>
     </div>

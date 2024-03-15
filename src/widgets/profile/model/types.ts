@@ -1,8 +1,5 @@
 export type PropsStory = {
-  imageSource: string;
-  altText: string;
-  imageW?: number;
-  imageH?: number;
+  imageSource: { src: string; height?: number; width?: number };
   description: string;
 };
 

@@ -8,29 +8,14 @@ const stories = [
   {
     id: 1,
     imageSource: imgStory1,
-    altText: 'Metallica',
-    imgW: 75,
-    imgH: 31,
     description: 'Metallica',
   },
   {
     id: 2,
     imageSource: imgStory2,
-    altText: 'Frisbee',
-    imgW: 75,
-    imgH: 75,
     description: 'Frisbee',
   },
 ];
-
-console.log('Начало');
-console.log(stories[0].imageSource);
-console.log(stories[0].imageSource);
-console.log(stories[0].imageSource);
-console.log(stories[0].imageSource);
-console.log(stories[0].imageSource);
-console.log(stories[0].imageSource);
-console.log('Конец');
 
 const Stories = () => {
   return (
@@ -38,10 +23,7 @@ const Stories = () => {
       {stories.map((item) => (
         <li className={styles.stories__item} key={item.id}>
           <Story
-            imageSource={item.imageSource.src}
-            altText={item.altText}
-            imageW={item.imgW}
-            imageH={item.imgH}
+            imageSource={item.imageSource}
             description={item.description}
           />
         </li>

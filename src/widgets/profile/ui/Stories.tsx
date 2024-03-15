@@ -1,7 +1,7 @@
 import Story from './Story';
 import styles from '../styles.module.scss';
-import imgStory1 from '../img/story1.png';
-import imgStory2 from '../img/story2.png';
+import imgStory1 from '@assets/story1.png';
+import imgStory2 from '@assets/story2.png';
 
 const stories = [
   {

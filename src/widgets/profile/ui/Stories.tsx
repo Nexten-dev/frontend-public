@@ -17,6 +17,8 @@ const stories = [
   },
 ];
 
+console.log(stories[0].imageSource);
+
 const Stories = () => {
   return (
     <ul className={styles.stories}>

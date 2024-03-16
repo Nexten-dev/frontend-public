@@ -12,7 +12,7 @@ const Nav = () => {
       <ul className={`list-reset ${styles['list']}`}>
         {
           navList.map(item=> {
-            const isActive = pathName?.startsWith(item.link);
+            const isActive = pathName == item.link;
             return (
               <li key={item.name}>
                 <Link href={item.link} className={`link-reset ${styles['item']} ${isActive ? styles['item--active'] : ''}`}>{item.icon}{item.name}</Link>

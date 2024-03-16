@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.list {
+  display: flex;
+  column-gap: 16px;
+}
+
+.link,
+.copyright {
+  color: var(--clr-gray);
+  line-height: 16px;
+}
+
+.link {
+  font-size: 11px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.copyright {
+  display: flex;
+  font-size: 12px;
+  column-gap: 16px;
+}
+
+.dropdown {
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media (width >= 1200px) {
+  .dropdown:hover,
+  .link:hover {
+    opacity: 0.8;
+  }
+}

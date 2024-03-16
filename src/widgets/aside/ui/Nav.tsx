@@ -1,26 +1,9 @@
 "use client"
-import IconHome from "@/shared/ui/icons/icon-home/IconHome";
 import styles from "../styles.module.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import navList from "../consts/nav";
 
-const navList = [
-  {
-    name: "Home",
-    icon: <IconHome/>,
-    link: "/home"
-  },
-  {
-    name: "Profile",
-    icon: <IconHome/>,
-    link: "/profile"
-  },
-  {
-    name: "Messages",
-    icon: <IconHome/>,
-    link: "/messages"
-  }
-];
 
 const Nav = () => {
   const pathName = usePathname();

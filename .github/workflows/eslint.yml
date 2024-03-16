@@ -2,10 +2,7 @@ name: ESLint
 
 on:
   push:
-    branches: 
-      - master
-      - dev
-      - features/*
+    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 

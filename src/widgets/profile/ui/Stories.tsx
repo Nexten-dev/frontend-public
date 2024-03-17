@@ -6,18 +6,15 @@ import styles from '../styles.module.scss';
 const stories = [
   {
     id: 1,
+    loock: false,
     imageSource: imgStory1,
     description: 'Metallica',
   },
   {
     id: 2,
+    loock: true,
     imageSource: imgStory2,
     description: 'Frisbee',
-  },
-  {
-    id: 1,
-    imageSource: imgStory1,
-    description: 'Metallica',
   },
 ];
 
@@ -27,6 +24,7 @@ const Stories = () => {
       {stories.map((item) => (
         <li className={styles.stories__item} key={item.id}>
           <Story
+            loock={item.loock}
             imageSource={item.imageSource}
             description={item.description}
           />

@@ -1,0 +1,28 @@
+.btn {
+  padding: 7px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  border: 2px solid transparent;
+  border-radius: var(--std-border-radius);
+  transition: opacity 0.3s ease-in-out;
+
+  &--primary {
+    color: var(--clr-light);
+    background-color: var(--clr-primary);
+  }
+
+  &--secondary {
+    color: var(--clr-primary);
+  }
+}
+
+@media (width >= 1200px) {
+  .btn:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn:focus-visible {
+  border-color: var(--clr-dark)
+}

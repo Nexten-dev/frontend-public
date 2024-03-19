@@ -1,4 +1,41 @@
 .stories {
   padding: 10px 30px;
   border: 1px solid #eee;
+
+  &__username {
+    margin: 0;
+    color: #262626;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 16px;
+    letter-spacing: 0.12px;
+    text-align: center;
+  }
+
+  &__user-photo {
+    padding: 5px;
+    object-fit: cover;
+    background-image: linear-gradient(white, white), radial-gradient(circle at bottom left, #d3d3d380, #d3d3d380);
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    border: double 2px transparent;
+    border-radius: 50%;
+
+    &--story {
+      background-image: linear-gradient(white, white), radial-gradient(circle at bottom left, #ffca00, #d300c5);
+    }
+  }
+}
+
+.list {
+  display: flex;
+  column-gap: 16px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
 }

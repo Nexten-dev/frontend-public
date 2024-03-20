@@ -4,6 +4,8 @@
   row-gap: 50px;
 }
 
+/* Panel */
+
 .panel {
   display: flex;
   padding: 0 60px;
@@ -159,6 +161,8 @@
   color: #8e8e8e;
 }
 
+/* Stories */
+
 .stories {
   display: flex;
   flex-direction: row;
@@ -209,10 +213,50 @@
   }
 }
 
-.posts {
-  padding: 80px 30px;
-  border: 1px solid gold;
+/* Content */
+
+.content {
+  &__btn {
+    padding: 3px 0 3px 18px;
+    color: #8e8e8e;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 18px;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+
+  &__btn .btn-posts {
+    background-image: url('../../../assets/posts-icon.svg');
+  }
+
+  &__btn--active {
+    color: #262626;
+  }
+
+  &__posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+  }
 }
 
-.content__posts {
+.btn-list {
+  display: flex;
+  justify-content: center;
+  padding: 17px 0;
+  border-top: 2px solid #dbdbdb;
+}
+
+.btn-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.btn-reels {
+  background-image: url('../../../assets/reels-icon.svg');
+}
+
+.btn-tagged {
+  background-image: url('../../../assets/tagged-icon.svg');
 }

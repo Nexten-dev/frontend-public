@@ -24,7 +24,7 @@ const ProfileSettings = () => {
         <BoldText className={styles["side"]}>Name</BoldText>
         <Input/>
         <HintText>
-          Help people discover your account by using the name you're known by: either your full name, nickname, or business name.
+          Help people discover your account by using the name you&apos;re known by: either your full name, nickname, or business name.
             <br/>
           You can only change your name twice within 14 days.
         </HintText>
@@ -33,7 +33,7 @@ const ProfileSettings = () => {
       <RowInput>
         <BoldText className={styles["side"]}>Username</BoldText>
         <Input/>
-        <HintText>In most cases, you'll be able to change your username back to upvox_ for another 14 days.</HintText>
+        <HintText>In most cases, you&apos;ll be able to change your username back to upvox_ for another 14 days.</HintText>
       </RowInput>
 
 
@@ -53,7 +53,7 @@ const ProfileSettings = () => {
       <RowInput className={styles["row--xs"]}>
         <BoldText className={styles["side"]}></BoldText>
         <BoldText className='clr-gray'>Personal information</BoldText>
-        <HintText className='clr-gray'>Provide your personal information, even if the account is used for a business, a pet or something else. This won't be a part of your public profile.</HintText>
+        <HintText className='clr-gray'>Provide your personal information, even if the account is used for a business, a pet or something else. This won&apos;t be a part of your public profile.</HintText>
       </RowInput>
 
       <RowInput>

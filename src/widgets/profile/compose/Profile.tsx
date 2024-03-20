@@ -1,7 +1,7 @@
 import React from 'react';
 import Panel from '../ui/Panel';
 import Stories from '../ui/Stories';
-import Posts from '../ui/Posts';
+import Content from '../ui/Content';
 import styles from '../styles.module.scss';
 
 const Profile = () => {
@@ -9,7 +9,7 @@ const Profile = () => {
     <div className={styles['profile']}>
       <Panel />
       <Stories />
-      <Posts />
+      <Content />
     </div>
   );
 };

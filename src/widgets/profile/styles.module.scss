@@ -226,7 +226,7 @@
     background-position: center left;
   }
 
-  &__btn .btn-posts {
+  &__btn.btn-posts {
     background-image: url('../../../assets/posts-icon.svg');
   }
 
@@ -239,6 +239,14 @@
     flex-wrap: wrap;
     gap: 4px;
     justify-content: center;
+  }
+}
+
+.btn-posts.content {
+  &__btn {
+    &--active {
+      background-image: url('../../../assets/posts-icon-active.svg');
+    }
   }
 }
 

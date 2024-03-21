@@ -29,6 +29,7 @@ tabBtn.forEach(function (elem) {
 */
 
 const Content = () => {
+  let btnAction = document.querySelectorAll('.');
   return (
     <div className={styles.content}>
       <ul className={`list-reset ${styles['btn-list']}`}>
@@ -58,7 +59,7 @@ const Content = () => {
         </li>
       </ul>
       <ul
-        className={`list-reset ${styles['content__list']}`}
+        className={`list-reset ${styles['content__list']} ${styles['content__list--active']}`}
         data-target='posts'
       >
         <li className={styles['content__item']} style={{ height: 342 }}>

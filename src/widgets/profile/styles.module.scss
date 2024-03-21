@@ -244,10 +244,14 @@
   }
 
   &__list {
-    display: grid;
+    display: none;
     grid-auto-rows: minmax(309px, auto);
     grid-template-columns: repeat(3, 1fr);
     gap: 4px;
+
+    &--active {
+      display: grid;
+    }
   }
 
   &__view {

@@ -1,4 +1,193 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .posts {
-  padding: 40px 30px;
-  border: 1px dashed green; 
+  &__item {
+    padding-bottom: 15px;
+  }
+
+  &__item:not(:last-child) {
+    border-bottom: 1px solid #DBDBDB;
+  }
+}
+
+.post-top {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+
+  &__username {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+    color: var(--clr-dark);
+    font-weight: 600;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
+    text-align: center;
+
+    &--verified {
+      gap: 4px;
+    }
+
+    &--verified::after {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-image: url('../../../assets/blue-check.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+    }
+  }
+
+  &__img-link {
+    display: flex;
+    margin-right: 7px;
+  }
+
+  &__user-photo {
+    padding: 3px;
+    object-fit: cover;
+    border: double 2px transparent;
+    border-radius: 50%;
+
+    &--story {
+      background-image: linear-gradient(white, white), radial-gradient(circle at bottom left, #ffca00, #d300c5);
+      background-clip: padding-box, border-box;
+      background-origin: border-box;
+    }
+  }
+
+  &__time {
+    color: var(--clr-gray);
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
+  }
+
+  &__btn:last-child {
+    margin-left: auto;
+  }
+
+  &__btn svg {
+    fill: var(--clr-dark);
+  }
+}
+
+.slider {
+  display: block;
+
+}
+
+.img {
+  display: block;
+}
+
+.actions-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 13px 0 6px;
+
+  &__btn:last-child {
+    margin-left: auto;
+  }
+
+  &__btn svg {
+    color: var(--clr-dark);
+  }
+}
+
+.likes-count {
+  padding: 8px 0;
+  color: var(--clr-dark);
+  font-weight: 600;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 18px;
+}
+
+.decr-row {
+  color: var(--clr-dark);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+
+  &--long-text {
+    margin-bottom: 6px;
+  }
+
+  &__user-name {
+    display: inline;
+    margin: 0;
+    margin-right: 4px;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  &__descr {
+    display: inline;
+    margin: 0;
+    font-weight: 400;
+
+  }
+
+  &__decr-btn {
+    display: inline;
+    color: var(--clr-gray);
+    font-weight: 400;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 18px;
+  }
+
+  &__btn {
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    &--long-text {
+      display: none;
+    }
+  }
+}
+
+.comment-field {
+  padding: 8px 0;
+
+  &__view-btn {
+    margin-bottom: 6px;
+    color: var(--clr-gray);
+    font-weight: 400;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 18px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    flex: 1;
+    border: none;
+
+    &::placeholder {
+      color: var(--clr-dark);
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+
+
+  &__emoji-btn svg {
+    color: var(--clr-gray);
+  }
 }

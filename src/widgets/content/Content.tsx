@@ -2,7 +2,7 @@ import Image from 'next/image';
 import post1 from '@assets/post1.jpg';
 import post2 from '@assets/post2.jpeg';
 import post3 from '@assets/post3.jpeg';
-import styles from '../styles.module.scss';
+import styles from './styles.module.scss';
 
 const Content = () => {
   return (

@@ -1,5 +1,5 @@
 import avatar from '@assets/avatar.jpg';
-import styles from '../styles.module.scss';
+import styles from './styles.module.scss';
 
 const user = {
   nickname: 'vasya',
@@ -12,7 +12,7 @@ const user = {
   posts: '1,861',
   followers: '4M',
   following: '454',
-  followedBy: 'sharik',
+  followedBy: 'sharik'
 };
 
 let userVerify = user.verify

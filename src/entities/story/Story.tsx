@@ -1,5 +1,5 @@
-import type { PropsStory } from '../model/types';
-import styles from '../styles.module.scss';
+import type { PropsStory } from './interface/types';
+import styles from './styles.module.scss';
 
 function Story({ imageSource, description, loock }: PropsStory) {
   let stylePreview = loock

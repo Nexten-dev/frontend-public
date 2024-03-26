@@ -1,7 +1,7 @@
 import React from 'react';
-import Panel from '../ui/Panel';
-import Stories from '../ui/Stories';
-import Content from '../ui/Content';
+import Panel from '../../panel';
+import Stories from '../../stories';
+import Content from '../../content';
 import styles from '../styles.module.scss';
 
 const Profile = () => {
